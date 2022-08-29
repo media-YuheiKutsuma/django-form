@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>フォームを作成</title>
+</head>
+ 
+<body>
+    <h1>フォームを作成するよ！</h1>
+    <p>{{ message }}</p>
+    <hr>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">送信</button>
+    </form>
+</body>
+ 
+</html>
